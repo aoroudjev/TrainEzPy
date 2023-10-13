@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "train-ezpy"
+version = "0.1.0"
+description = ""
+authors = ["aoroudjev <a.oroudjev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.12"
+tensorflow-io-gcs-filesystem = "0.31"
+tensorflow = "^2.14.0"
+keras-cv = "^0.6.4"
+tensorflow-datasets="4.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
