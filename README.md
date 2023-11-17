@@ -17,7 +17,7 @@ The module primarily leverages TensorFlow, Keras, and OpenCV libraries to facili
 - Pillow
 
 #### Installation
-1. **Install Python 3.x**: Download from [official Python website](https://www.python.org/downloads/).
+1. **Install Python ^3.8**: Download from [official Python website](https://www.python.org/downloads/).
 2. **Install required libraries**: Use pip or poetry to install the necessary libraries.
 ```bash
 pip install tensorflow keras keras-cv opencv-python numpy tqdm pillow
