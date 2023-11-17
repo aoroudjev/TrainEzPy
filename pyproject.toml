@@ -11,6 +11,11 @@ tensorflow-io-gcs-filesystem = "0.31"
 tensorflow = "^2.14.0"
 keras-cv = "^0.6.4"
 tensorflow-datasets="4.9.2"
+opencv-python = "^4.8.1.78"
+matplotlib = "3.7.1"
+array-record = "0.4.1"
+pycocotools = "^2.0.7"
+jupyter = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
