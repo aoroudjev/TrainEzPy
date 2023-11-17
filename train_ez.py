@@ -125,7 +125,6 @@ def visualize_dataset(inputs, value_range, rows, cols, bounding_box_format, clas
         scale=5,
         font_scale=0.7,
         bounding_box_format=bounding_box_format,
-        # TODO: Remove hard code
         class_mapping=class_mapping,
     )
 
@@ -187,6 +186,5 @@ def visualize_detections(model, dataset, bounding_box_format, class_mapping):
         cols=2,
         show=True,
         font_scale=0.7,
-        # TODO: Remove hard code
         class_mapping=class_mapping,
     )
