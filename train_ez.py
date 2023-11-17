@@ -104,7 +104,7 @@ def load_dataset(image_path, classes, bbox):
     return {"images": tf.cast(image, tf.float32), "bounding_boxes": bounding_boxes}
 
 
-def visualize_dataset(inputs, value_range, rows, cols, bounding_box_format):
+def visualize_dataset(inputs, value_range, rows, cols, bounding_box_format, class_mapping):
     """
     Visualize a dataset containing images and their associated bounding boxes.
     :param inputs: An iterable containing the dataset elements.
@@ -126,7 +126,7 @@ def visualize_dataset(inputs, value_range, rows, cols, bounding_box_format):
         font_scale=0.7,
         bounding_box_format=bounding_box_format,
         # TODO: Remove hard code
-        class_mapping={0: 'palm'},
+        class_mapping=class_mapping,
     )
 
 
@@ -166,7 +166,7 @@ def replace_white_background(image, background_images):
     return None
 
 
-def visualize_detections(model, dataset, bounding_box_format):
+def visualize_detections(model, dataset, bounding_box_format, class_mapping):
     """
     Visualize a dataset using a model as a detector and using the saved dataset annotations.
     :param model: Model to detect objects in image.
@@ -188,5 +188,5 @@ def visualize_detections(model, dataset, bounding_box_format):
         show=True,
         font_scale=0.7,
         # TODO: Remove hard code
-        class_mapping={0: 'palm'},
+        class_mapping=class_mapping,
     )
